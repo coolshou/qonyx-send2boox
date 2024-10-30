@@ -1,0 +1,27 @@
+Source: qonyx-send2boox
+Section: unknown
+Priority: optional
+Maintainer: coolshou <coolshou2060@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-setuptools,
+ python3-all,
+#Testsuite: autopkgtest-pkg-python
+Standards-Version: 4.6.2
+Homepage: https://github.com/coolshou/qonyx-send2boox
+#Vcs-Browser: https://salsa.debian.org/debian/qonyx-send2boox
+#Vcs-Git: https://salsa.debian.org/debian/qonyx-send2boox.git
+
+Package: qonyx-send2boox
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${python3:Depends},
+ ${misc:Depends},
+Description: Handle files Onyx Boox e-book reader via Send2Boox service (Python 3)
+  handle files Onyx Boox e-book reader via Send2Boox service
+ .
+ This package installs the library for Python 3.
+
